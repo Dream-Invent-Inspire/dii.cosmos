@@ -5,7 +5,7 @@ using System;
 
 namespace dii.cosmos.Models
 {
-    public abstract class DiiCosmosEntity : IDiiCosmosEntity
+    public abstract class DiiCosmosEntity : IDiiEntity
 	{
 		/// <inheritdoc/>
 		//[Searchable(Constants.ReservedSchemaVersionKey)]
@@ -15,5 +15,5 @@ namespace dii.cosmos.Models
 		/// <inheritdoc/>
 		[Searchable("_etag")]
 		public string DataVersion { get; set; }
-	}
+    }
 }
